@@ -1,16 +1,16 @@
 /* Add styling for your page here */
 
 .App {
- 
+  text-align: center;
 }
 
 h1 {
-  text-align: center;
   padding: 20px;
   text-shadow: 0 1px 1px rgba;
   text-transform: uppercase;
   text-decoration: underline;
 }
+
 .main {
   display: flex;
   flex-direction: row;

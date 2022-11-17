@@ -23,7 +23,7 @@ function App() {
   
   return (
     <div>
-    <h1>Z's Bakery</h1>
+    <h1>Z's Recipes ❤️ </h1>
       <div class="main">
         <div class="BakeryContainer"> 
             {bakeryData.map((item, index) => (

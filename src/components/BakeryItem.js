@@ -8,7 +8,7 @@ const BakeryItem = ({item, clickItem}) => {
           <h5>{item.name}</h5>
           <p>{item.description}</p>
           <p>Price: {item.price}</p>
-          <button onClick={() => clickItem(item)}>Add to Cart</button>
+          <button onClick={() => clickItem(item)}>♡</button>
         </div> 
     )
 };

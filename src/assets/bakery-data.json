@@ -1,92 +1,86 @@
 [
   {
-    "name": "Chocolate Chip Cookies",
-    "description": "Four classic chocolate chip cookies",
-    "price": 7.99,
-    "image": "images/anika.png"
+    "name": "Thousand Layers",
+    "description": "Very airy custard slices layered with cream",
+    "price": 12.00,
+    "image": "images/anika.png",
+    "type": "dessert"
   },
   {
-    "name": "Matcha Mille Crepe Cake",
-    "description": "Layers of matcha crepe and matcha cream filling, topped with strawberries",
-    "price": 4.99,
-    "image": "images/aubrey.png"
+    "name": "Hand-made Lamb Dumpling",
+    "description": "A homemade, hand-folded dough, wrapping a savory all lamb filling.",
+    "price": 55,
+    "image": "images/aubrey.png",
+    "type": "appetizer"
   },
   {
-    "name": "Egg Custard Bun",
-    "description": "A fluffy steamed bun with a savory egg filling",
-    "price": 2.99,
-    "image": "images/connie.png"
+    "name": "Stir-fried Beans",
+    "description": "String beans seasoned with mildly spicy dry chili",
+    "price": 15,
+    "image": "images/connie.png",
+    "type": "wok"
   },
   {
-    "name": "Steamed Taro Buns",
-    "description": "Two soft steamed buns filled with gooey purple taro filling",
-    "price": 5.99,
-    "image": "images/dylan.png"
+    "name": "Bobas Milk Ice Cream Bar",
+    "description": "Bobas Milk Ice Cream Bar with jelly fillings",
+    "price": 60,
+    "image": "images/dylan.png",
+    "type": "dessert"
   },
   {
-    "name": "Chocolate Fudge Brownie",
-    "description": "A rich fudge brownie drizzled with chocolate ganache",
-    "price": 3.99,
-    "image": "images/isaac.png"
+    "name": "Kavap",
+    "description": "Marinated lamb kebabs made using a family recipe",
+    "price": 35,
+    "image": "images/isaac.png",
+    "type": "appetizer"
   },
   {
-    "name": "Macarons",
-    "description": "A box of three macarons in assorted flavors",
-    "price": 4.99,
-    "image": "images/jeff.png"
+    "name": "Leek & Eggs Dumpling",
+    "description": "Homemade vegetarian dumplings stuffed with egg, fresh chives, minced shrimp and glass noodles.",
+    "price": 45,
+    "image": "images/jeff.png",
+    "type": "appetizer"
   },
   {
-    "name": "Multigrain Bread",
-    "description": "A loaf of fresh-baked multigrain bread",
-    "price": 4.99,
-    "image": "images/jenny.png"
+    "name": "Meefen",
+    "description": "Spicy house made chili paste stir fried with gluten free rice noddles, chicken and celery create an aromatic flavor",
+    "price": 55,
+    "image": "images/jenny.png",
+    "type": "entree"
   },
   {
-    "name": "Croissant",
-    "description": "A classic butter croissant with a flaky crust",
-    "price": 2.99,
-    "image": "images/jessie.png"
+    "name": "Not your Typical Honey Cake",
+    "description": "Consists of layers os sponge cake with a cream filing and coating, is known for its lengthly preparation. It is decadent, beautiful and absolutely delicious. (serve with a scoop of ice cream)",
+    "price": 40,
+    "image": "images/jessie.png",
+    "type": "dessert"
   },
   {
-    "name": "Toast with Butter",
-    "description": "A slice of toast with a pat of butter",
-    "price": 1.99,
-    "image": "images/kelly.png"
+    "name": "Jahunger Noodles",
+    "description": "Hand-pulled noodles topped with thin slices of beef, seasoned with a tongue-numbing secret sauce prepared using Sichuan peppercorns. With the right amount pf fresh chives, brings a touch of aromatic flavor to this amazing dish.",
+    "price": 75,
+    "image": "images/kelly.png",
+    "type": "entree"
   },
   {
-    "name": "Tiramisu",
-    "description": "A classic tiramisu with layers of coffee-soaked ladyfingers and mascarpone cream",
-    "price": 3.99,
-    "image": "images/lauren.png"
+    "name": "Asian Rice",
+    "description": "A bowl of traditional Asian white rice.",
+    "price": 30,
+    "image": "images/lauren.png",
+    "type": "wok"
   },
   {
-    "name": "Egg Tart",
-    "description": "A flaky pastry shell filled with a sweet egg custard",
-    "price": 2.99,
-    "image": "images/melissa.png"
+    "name": "Chicken Stew",
+    "description": "Chicken, broad hand pulled noodles, so thinly sliced as to be nearly translucent, potatoes, and green peppers.",
+    "price": 110,
+    "image": "images/melissa.png",
+    "type": "entree"
   },
   {
-    "name": "Everything Bagel",
-    "description": "A toasted bagel with sesame seeds, poppy seeds, and dried onion",
-    "price": 2.99,
-    "image": "images/miku.png"
-  },
-  {
-    "name": "Gingerbread Man",
-    "description": "A soft gingerbread cookie with a sweet icing glaze",
-    "price": 2.99,
-    "image": "images/nick.png"
-  },
-  {
-    "name": "Cheesecake",
-    "description": "A slice of classic New York cheesecake topped with strawberry",
-    "price": 3.99,
-    "image": "images/sunny.png"
-  },
-  {
-    "name": "Cream Puff",
-    "description": "Light and airy pâte à choux filled with sweet whipped cream",
-    "price": 2.99,
-    "image": "images/tongyu.png"
+    "name": "Home Made Yogurt",
+    "description": "Home made yogurt topping with high-quality organic honey with curshed walnuts.",
+    "price": 40,
+    "image": "images/miku.png",
+    "type": "dessert"
   }
 ]
