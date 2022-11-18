@@ -16,24 +16,36 @@ function App() {
   /* add your cart state code here */
   
   const [cart, setCart] = useState([]);
-
-  const clickItem = (item) => {
-    setCart([...cart, { text: item.name, price: item.price, key: Date.now() }]);
+  
+  const addToFavorite = (item) => {
+    if (!(cart.includes(item))){
+      setCart([...cart, item]);
+    }
   };
   
+  const removeFromFavorite = (i) => {
+    let filteredCart = cart.filter(function(item) { 
+        return item !== i
+    });
+    setCart([...filteredCart]);
+  };
+    
   return (
-    <div>
-    <h1>Z's Recipes ❤️ </h1>
-      <div class="main">
-        <div class="BakeryContainer"> 
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Z's Recipes 🕊️</h1>
+        <p> </p>
+          <div class="main">
+            <div class="BakeryContainer"> 
             {bakeryData.map((item, index) => (
-              <BakeryItem item={item} clickItem={clickItem} />
+              <BakeryItem item={item} addToFavorite={addToFavorite} removeFromFavorite={removeFromFavorite} />
             ))}
           </div>
         <div class="Cart">
-          <h2>Cart</h2>
+          <p class="h4">Your Favs ❤️</p>
           <Cart cartState={cart}/>
         </div>
+      </div>
     </div>
     </div>
   );

@@ -5,10 +5,10 @@
 }
 
 h1 {
+  text-align: center;
   padding: 20px;
   text-shadow: 0 1px 1px rgba;
   text-transform: uppercase;
-  text-decoration: underline;
 }
 
 .main {
@@ -27,7 +27,7 @@ h1 {
 .BakeryItem {
   width: 300px;
   height: auto;
-  background-color: beige;
+  background-color: #DCEAFC;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -42,6 +42,8 @@ h1 {
 }
 
 .Cart{
-  flex: 25%;
+  flex: 45%;
   float: left;
+  margin: 20px;
+  padding: 20px;
 }
