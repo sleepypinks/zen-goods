@@ -2,85 +2,97 @@
   {
     "name": "Thousand Layers",
     "description": "Very airy custard slices layered with cream",
-    "price": 12.00,
+    "cooking_time": 12,
     "image": "images/anika.png",
-    "type": "dessert"
+    "vegan": "yes",
+    "gluten_free": "no"
   },
   {
     "name": "Hand-made Lamb Dumpling",
     "description": "A homemade, hand-folded dough, wrapping a savory all lamb filling.",
-    "price": 55,
+    "cooking_time": 55,
     "image": "images/aubrey.png",
-    "type": "appetizer"
+    "vegan": "no",
+    "gluten_free": "no"
   },
   {
     "name": "Stir-fried Beans",
     "description": "String beans seasoned with mildly spicy dry chili",
-    "price": 15,
+    "cooking_time": 15,
     "image": "images/connie.png",
-    "type": "wok"
+    "vegan": "yes",
+    "gluten_free": "yes"
   },
   {
     "name": "Bobas Milk Ice Cream Bar",
     "description": "Bobas Milk Ice Cream Bar with jelly fillings",
-    "price": 60,
+    "cooking_time": 60,
     "image": "images/dylan.png",
-    "type": "dessert"
+    "vegan": "yes",
+    "gluten_free": "yes"
   },
   {
     "name": "Kavap",
     "description": "Marinated lamb kebabs made using a family recipe",
-    "price": 35,
+    "cooking_time": 35,
     "image": "images/isaac.png",
-    "type": "appetizer"
+    "vegan": "no",
+    "gluten_free": "yes"
   },
   {
-    "name": "Leek & Eggs Dumpling",
+    "name": "Leek Dumpling",
     "description": "Homemade vegetarian dumplings stuffed with egg, fresh chives, minced shrimp and glass noodles.",
-    "price": 45,
+    "cooking_time": 45,
     "image": "images/jeff.png",
-    "type": "appetizer"
+    "vegan": "yes",
+    "gluten_free": "no"
   },
   {
     "name": "Meefen",
     "description": "Spicy house made chili paste stir fried with gluten free rice noddles, chicken and celery create an aromatic flavor",
-    "price": 55,
+    "cooking_time": 55,
     "image": "images/jenny.png",
-    "type": "entree"
+    "vegan": "no",
+    "gluten_free": "yes"
   },
   {
     "name": "Not your Typical Honey Cake",
-    "description": "Consists of layers os sponge cake with a cream filing and coating, is known for its lengthly preparation. It is decadent, beautiful and absolutely delicious. (serve with a scoop of ice cream)",
-    "price": 40,
+    "description": "Consists of layers os sponge cake with a cream filing and coating, is known for its lengthly preparation.",
+    "cooking_time": 40,
     "image": "images/jessie.png",
-    "type": "dessert"
+    "vegan": "yes",
+    "gluten_free": "yes"
   },
   {
     "name": "Jahunger Noodles",
-    "description": "Hand-pulled noodles topped with thin slices of beef, seasoned with a tongue-numbing secret sauce prepared using Sichuan peppercorns. With the right amount pf fresh chives, brings a touch of aromatic flavor to this amazing dish.",
-    "price": 75,
+    "description": "Hand-pulled noodles topped with thin slices of beef, seasoned with a tongue-numbing secret sauce prepared using Sichuan peppercorns.",
+    "cooking_time": 75,
     "image": "images/kelly.png",
-    "type": "entree"
+    "vegan": "no",
+    "gluten_free": "no"
   },
   {
     "name": "Asian Rice",
     "description": "A bowl of traditional Asian white rice.",
-    "price": 30,
+    "cooking_time": 30,
     "image": "images/lauren.png",
-    "type": "wok"
+    "vegan": "yes",
+    "gluten_free": "yes"
   },
   {
     "name": "Chicken Stew",
     "description": "Chicken, broad hand pulled noodles, so thinly sliced as to be nearly translucent, potatoes, and green peppers.",
-    "price": 110,
+    "cooking_time": 110,
     "image": "images/melissa.png",
-    "type": "entree"
+    "vegan": "no",
+    "gluten_free": "no"
   },
   {
     "name": "Home Made Yogurt",
     "description": "Home made yogurt topping with high-quality organic honey with curshed walnuts.",
-    "price": 40,
+    "cooking_time": 40,
     "image": "images/miku.png",
-    "type": "dessert"
+    "vegan": "yes",
+    "gluten_free": "yes"
   }
 ]

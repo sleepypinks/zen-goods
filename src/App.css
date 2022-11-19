@@ -37,13 +37,23 @@ h1 {
 }
 
 .BakeryImage {
-  max-width: 10vw;
-  max-height: 10vw;
+  max-width: 18vw;
+  max-height: 18vw;
 }
 
-.Cart{
+.FilterOptions{
   flex: 45%;
   float: left;
   margin: 20px;
+  padding: 20px;
+}
+
+.Banner{
+  overflow: hidden; 
+  display: flex; 
+  justify-content:space-around;
+}
+
+.Icon {
   padding: 20px;
 }
