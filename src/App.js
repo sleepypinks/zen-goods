@@ -19,7 +19,7 @@
     /* add your cart state code here */
     
     const [favList, setFav] = useState([]);
-    const [filterOptions, setfilterOptions] = useState([]);
+    const [filter, setfilter] = useState([]);
     const [recipes, setRecipes] = useState(bakeryData)
     
     const addToFavorite = (item) => {
@@ -36,14 +36,17 @@
     };
     
     const addSortFilter = (sortFilter) => {
-      console.log("in sort")
-      setfilterOptions([...filterOptions, sortFilter]);
+      if (!(filter.includes(sortFilter))){
+        setfilter([...filter, sortFilter]);
+      }
       let sortedRecipes = [...recipes].sort( (a,b) => a.cooking_time > b.cooking_time ? 1 : -1 );
       setRecipes([...sortedRecipes]);
     };
     
     const addVeganFilter = (veganFilter) => {
-      setfilterOptions([...filterOptions, veganFilter]);
+      if (!(filter.includes(veganFilter))){
+        setfilter([...filter, veganFilter]);
+      }
       let veganRecipes = [...recipes].filter(function(item) {
         return (item.vegan === "yes")
       });
@@ -51,21 +54,24 @@
     };
     
     const addGlutenFilter = (glutenFilter) => {
-      setfilterOptions([...filterOptions, glutenFilter]);
+      if (!(filter.includes(glutenFilter))){
+        setfilter([...filter, glutenFilter]);
+      }
       let glutenRecipes = [...recipes].filter(function(item) {
         return (item.gluten_free === "yes")
       });
       setRecipes([...glutenRecipes]);
     };
     
-    const removeFilter = (filterName) => {
-      let newFilters = filterOptions.filter(function(item) {       
+    async function removeFilter(filterName){
+      await setRecipes([...bakeryData]);
+      let newFilters = filter.filter(function(item) {       
           return item !== filterName
       });
-      setfilterOptions([...newFilters]);
-      setRecipes([...bakeryData]);
+      await setfilter([...newFilters]);
       
       for (let i = 0; i < newFilters.length; i++) { 
+        console.log(newFilters[i]);
           if (newFilters[i] == "sortbyCookTime"){
             addSortFilter(newFilters[i])
           }
