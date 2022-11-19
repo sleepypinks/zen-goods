@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/zen-goods/static/css/main.9698f5c9.css",
-    "main.js": "/zen-goods/static/js/main.1eaf27c3.js",
+    "main.css": "/zen-goods/static/css/main.df2d75e9.css",
+    "main.js": "/zen-goods/static/js/main.f46b3fa2.js",
     "index.html": "/zen-goods/index.html",
-    "main.9698f5c9.css.map": "/zen-goods/static/css/main.9698f5c9.css.map",
-    "main.1eaf27c3.js.map": "/zen-goods/static/js/main.1eaf27c3.js.map"
+    "main.df2d75e9.css.map": "/zen-goods/static/css/main.df2d75e9.css.map",
+    "main.f46b3fa2.js.map": "/zen-goods/static/js/main.f46b3fa2.js.map"
   },
   "entrypoints": [
-    "static/css/main.9698f5c9.css",
-    "static/js/main.1eaf27c3.js"
+    "static/css/main.df2d75e9.css",
+    "static/js/main.f46b3fa2.js"
   ]
 }
