@@ -8,11 +8,11 @@ export default function BakeryItem({item, addToFavorite, removeFromFavorite}){
     const [isFav, setFav] = useState(false);
     let vegan = ''
     if (item.vegan === "yes"){
-      vegan = '../images/vegan.jpg';}
+      vegan = 'https://www.barry-callebaut.com/sites/default/files/styles/paragraph_text_and_image_left_right/public/2020-01/CAL%20icon%20VEGAN%20rgb.jpg';}
       
     let gluten_free = ''
     if (item.gluten_free === "yes"){
-      gluten_free = '../images/gluten_free.png';}
+      gluten_free = 'http://content.health.harvard.edu/wp-content/uploads/2022/03/1a1b8e24-3224-41f5-a613-00f28f27cc06.jpg';}
 
     return (
         <div class="BakeryItem">
