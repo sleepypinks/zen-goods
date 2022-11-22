@@ -63,26 +63,40 @@
       setRecipes([...glutenRecipes]);
     };
     
-    async function removeFilter(filterName){
-      await setRecipes([...bakeryData]);
+    function removeFilter(filterName){
       let newFilters = filter.filter(function(item) {       
           return item !== filterName
       });
-      await setfilter([...newFilters]);
-      
+      setfilter([...newFilters]);
+      //applyAfterFilter();
+      setRecipes([...bakeryData]);
       for (let i = 0; i < newFilters.length; i++) { 
-        console.log(newFilters[i]);
-          if (newFilters[i] == "sortbyCookTime"){
+          if (newFilters[i] === "sortbyCookTime"){
             addSortFilter(newFilters[i])
           }
-          else if(newFilters[i] == "displayVeganRecipes"){
+          else if(newFilters[i] === "displayVeganRecipes"){
             addVeganFilter(newFilters[i])
           }
-          else if (newFilters[i] == "displayGlutenRecipes"){
+          else if (newFilters[i] === "displayGlutenRecipes"){
             addGlutenFilter(newFilters[i])
           }
        }
     };
+    
+    function applyAfterFilter(){
+      setRecipes([...bakeryData]);
+      for (let i = 0; i < filter.length; i++) { 
+          if (filter[i] === "sortbyCookTime"){
+            addSortFilter(filter[i])
+          }
+          else if(filter[i] === "displayVeganRecipes"){
+            addVeganFilter(filter[i])
+          }
+          else if (filter[i] === "displayGlutenRecipes"){
+            addGlutenFilter(filter[i])
+          }
+       }
+    }
     
     return (
       <div class="container">
@@ -90,7 +104,7 @@
           <h1>Z's Recipes 🕊️</h1>
           <p> </p>
             <div class="main">
-              <div class="BakeryContainer"> 
+              <div class="BakeryContainer">
               {recipes.map((item, index) => (
                 <BakeryItem item={item} 
                             addToFavorite={addToFavorite} 
