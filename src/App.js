@@ -68,35 +68,24 @@
           return item !== filterName
       });
       setfilter([...newFilters]);
-      //applyAfterFilter();
-      setRecipes([...bakeryData]);
-      for (let i = 0; i < newFilters.length; i++) { 
-          if (newFilters[i] === "sortbyCookTime"){
-            addSortFilter(newFilters[i])
-          }
-          else if(newFilters[i] === "displayVeganRecipes"){
-            addVeganFilter(newFilters[i])
-          }
-          else if (newFilters[i] === "displayGlutenRecipes"){
-            addGlutenFilter(newFilters[i])
-          }
-       }
+      let curBakeryData = [...bakeryData];
+      for (let i = 0; i < newFilters.length; i++){
+        if (newFilters[i] === "sortbyCookTime"){
+          curBakeryData = curBakeryData.sort( (a,b) => a.cooking_time > b.cooking_time ? 1 : -1 );
+        }
+        if (newFilters[i] === "displayVeganRecipes"){
+          curBakeryData = curBakeryData.filter(function(item) {
+            return (item.vegan === "yes")
+          });
+        }
+        if (newFilters[i] === "displayGlutenRecipes"){
+          curBakeryData = curBakeryData.filter(function(item) {
+            return (item.gluten_free === "yes")
+          });
+        }
+      }
+      setRecipes([...curBakeryData]);
     };
-    
-    function applyAfterFilter(){
-      setRecipes([...bakeryData]);
-      for (let i = 0; i < filter.length; i++) { 
-          if (filter[i] === "sortbyCookTime"){
-            addSortFilter(filter[i])
-          }
-          else if(filter[i] === "displayVeganRecipes"){
-            addVeganFilter(filter[i])
-          }
-          else if (filter[i] === "displayGlutenRecipes"){
-            addGlutenFilter(filter[i])
-          }
-       }
-    }
     
     return (
       <div class="container">
